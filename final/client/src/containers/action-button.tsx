@@ -77,6 +77,7 @@ const ToggleTripButton: React.FC<ActionButtonProps> = ({ id }) => {
       <Button
         onClick={() => {
           if (id) {
+            console.log("toggle button!")
             cartItemsVar(
               isInCart
                 ? cartItems.filter(itemId => itemId !== id)
